@@ -1,7 +1,10 @@
 import re
 import pdfplumber
+
 EMAIL_PATTERN = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
 PHONE_PATTERN = re.compile(r"(\+?\d{1,3}[\s-]?)?(\d{3,5}[\s-]?){2,3}\d{2,4}")
+LINKEDIN_PATTERN = re.compile(r"(?:https?://)?(?:www\.)?linkedin\.com/in/[a-zA-Z0-9_\-\+]+", re.IGNORECASE)
+GITHUB_PATTERN = re.compile(r"(?:https?://)?(?:www\.)?github\.com/[a-zA-Z0-9_\-\+]+", re.IGNORECASE)
 
 SECTION_HEADERS = {
     "skills":      ["SKILLS", "TECHNICAL SKILLS", "SKILL SET",
@@ -49,6 +52,16 @@ def _find_phone(text):
     return raw
 
 
+def _find_linkedin(text):
+    match = LINKEDIN_PATTERN.search(text)
+    return match.group(0).strip() if match else None
+
+
+def _find_github(text):
+    match = GITHUB_PATTERN.search(text)
+    return match.group(0).strip() if match else None
+
+
 def _find_name(lines):
     for line in lines:
         if not line:
@@ -90,7 +103,14 @@ def _extract_skills(section_lines):
         return []
     skills = []
     for line in section_lines:
-        parts = re.split(r"[,|;•·]", line)
+        if ":" in line:
+            parts = line.split(":", 1)
+            skills_text = parts[1]
+        else:
+            skills_text = line
+
+        # Split on comma, semicolon, pipe, bullet characters, tabs
+        parts = re.split(r"[,|;•·\t]", skills_text)
         for p in parts:
             p = p.strip()
             if p and len(p) < 40:
@@ -127,6 +147,8 @@ def parse_resume(filepath):
         "full_name": None,
         "emails": [],
         "phones": [],
+        "linkedin": None,
+        "github": None,
         "headline": None,
         "skills": [],
         "education_raw": [],
@@ -154,6 +176,8 @@ def parse_resume(filepath):
     name  = _find_name(lines)
     email = _find_email(text)
     phone = _find_phone(text)
+    linkedin = _find_linkedin(text)
+    github = _find_github(text)
 
     sections = _split_into_sections(text)
 
@@ -170,6 +194,8 @@ def parse_resume(filepath):
         "full_name": name,
         "emails": [email] if email else [],
         "phones": [phone] if phone else [],
+        "linkedin": linkedin,
+        "github": github,
         "headline": headline,
         "skills": skills,
         "education_raw": education,
