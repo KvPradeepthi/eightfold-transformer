@@ -158,5 +158,348 @@
       }
     ],
     "overall_confidence": 0.9
+  },
+  {
+    "candidate_id": "a7cce6b2-d722-4c60-8ba2-7d74a904cea1",
+    "full_name": "K. V. PRADEEPTHI",
+    "emails": [
+      "deepthi.kamichetty336@gmail.com"
+    ],
+    "phones": [
+      "+919390240204"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": "linkedin.com/in/kvpradeepthi",
+      "github": "github.com/KvPradeepthi",
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Final-year B.Tech IT student (CGPA: 9.51/10) with hands-on experience in Full-Stack Development, AI/ML, and",
+    "years_experience": null,
+    "skills": [
+      {
+        "name": "Python",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Java",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "C++",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Node.js",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Express.js",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "REST APIs",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "JWT",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "HTML",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "CSS",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "SQL",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Git",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Render",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Postman",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Bug Reporting",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Oci Ai Services",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Generative Ai Fundamentals",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Scikit-learn",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Pandas",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "NumPy",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Classification",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Regression Knn",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Decision Trees",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Random Forest",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Matplotlib",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "DSA",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "OOP",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "DBMS",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Sdlc",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Team Collaboration",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Leadership",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Problem Solving",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Communication",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Agile",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "summary": "Full Stack Software Development Intern | Technical Hub Link (May 2025 – Jun 2025) - Completed a Full Stack Development Internship, gaining hands-on experience in Frontend, backend development, REST API design, database integration, and web application development.",
+        "source": "resume",
+        "confidence": 0.6
+      },
+      {
+        "summary": "Full Stack Software Development Intern | Technical Hub Link (May 2026 – Present) - Developing and enhancing e-commerce-ready frontend features using React.js JavaScript framework, HTML, and CSS with seamless backend API integration. - Resolved 10+ production bugs; contributing to sprint cycles using version control (Git/GitHub) with strong problem-solving approach.",
+        "source": "resume",
+        "confidence": 0.6
+      }
+    ],
+    "education": [
+      {
+        "raw": "B.Tech – Information Technology, Aditya University (2023 – 2027)",
+        "source": "resume",
+        "confidence": 0.6
+      },
+      {
+        "raw": "- CGPA: 9.51/10 | Academic Topper – Semesters (1-6) | Intermediate: 98.6% | SSC: 98.5%",
+        "source": "resume",
+        "confidence": 0.6
+      }
+    ],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "resume",
+        "method": "only_source"
+      },
+      {
+        "field": "headline",
+        "source": "resume",
+        "method": "only_source"
+      },
+      {
+        "field": "emails",
+        "source": "csv+resume",
+        "method": "merged"
+      },
+      {
+        "field": "phones",
+        "source": "csv+resume",
+        "method": "merged+normalized"
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "extracted+canonicalized"
+      }
+    ],
+    "overall_confidence": 0.6
   }
 ]
