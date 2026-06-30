@@ -27,16 +27,6 @@ _HEADER_LOOKUP = {
 }
 
 
-def _extract_text(filepath):
-    full_text = []
-    with pdfplumber.open(filepath) as pdf:
-        for page in pdf.pages:
-            text = page.extract_text()
-            if text:
-                full_text.append(text)
-    return "\n".join(full_text)
-
-
 def _find_email(text):
     match = EMAIL_PATTERN.search(text)
     return match.group(0) if match else None
@@ -102,15 +92,21 @@ def _extract_skills(section_lines):
     if not section_lines:
         return []
     skills = []
+    
+    # Regex pattern to match known category labels ending with a colon
+    CATEGORY_PATTERN = re.compile(
+        r"\b(?:Backend|Frontend|Languages|Databases|Version\s+Control|Deployment|Testing|"
+        r"Cloud\s+&\s+AI(?:\s+Platforms)?|Machine\s+Learning|Core\s+CS|Professional\s+Skills|"
+        r"Skills\s+(?:&\s+Technologies)?|Other)\s*:",
+        re.IGNORECASE
+    )
+
     for line in section_lines:
-        if ":" in line:
-            parts = line.split(":", 1)
-            skills_text = parts[1]
-        else:
-            skills_text = line
+        # Replace category labels with a comma to act as a separator
+        cleaned_line = CATEGORY_PATTERN.sub(",", line)
 
         # Split on comma, semicolon, pipe, bullet characters, tabs
-        parts = re.split(r"[,|;•·\t]", skills_text)
+        parts = re.split(r"[,|;•·\t]", cleaned_line)
         for p in parts:
             p = p.strip()
             if p and len(p) < 40:
@@ -156,7 +152,30 @@ def parse_resume(filepath):
     }
 
     try:
-        text = _extract_text(filepath)
+        with pdfplumber.open(filepath) as pdf:
+            full_text = []
+            for page in pdf.pages:
+                t = page.extract_text()
+                if t:
+                    full_text.append(t)
+            text = "\n".join(full_text)
+
+            # 1. Read hyperlink annotations for LinkedIn and GitHub URLs
+            linkedin = None
+            github = None
+            for page in pdf.pages:
+                if hasattr(page, "hyperlinks") and page.hyperlinks:
+                    for link in page.hyperlinks:
+                        uri = link.get("uri")
+                        if uri:
+                            if not linkedin:
+                                l_match = LINKEDIN_PATTERN.search(uri)
+                                if l_match:
+                                    linkedin = l_match.group(0).strip()
+                            if not github:
+                                g_match = GITHUB_PATTERN.search(uri)
+                                if g_match:
+                                    github = g_match.group(0).strip()
     except FileNotFoundError:
         print(f"[resume_parser] WARNING: file not found at '{filepath}'. "
               f"Skipping resume source.")
@@ -171,13 +190,17 @@ def parse_resume(filepath):
               f"(possibly a scanned/image-only PDF). Skipping.")
         return empty_result
 
+    # 2. Fallback to visible text if links not found in hyperlinks annotations
+    if not linkedin:
+        linkedin = _find_linkedin(text)
+    if not github:
+        github = _find_github(text)
+
     lines = [l.strip() for l in text.split("\n") if l.strip()]
 
     name  = _find_name(lines)
     email = _find_email(text)
     phone = _find_phone(text)
-    linkedin = _find_linkedin(text)
-    github = _find_github(text)
 
     sections = _split_into_sections(text)
 
