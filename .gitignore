@@ -2,5 +2,4 @@ venv/
 ven/
 __pycache__/
 *.pyc
-input/resume.pdf
 .env
