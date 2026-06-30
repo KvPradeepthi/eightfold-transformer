@@ -1,0 +1,4 @@
+candidate_id,name,email,phone,current_company,title
+1,John Smith,john.smith@gmail.com,9876543210,Google,SDE
+2,Asha Rao,asha.rao@yahoo.com,98765 43211,Microsoft,Backend Engineer
+3,Ravi Kumar,,9123456789,Infosys,

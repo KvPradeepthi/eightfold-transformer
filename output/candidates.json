@@ -1,0 +1,484 @@
+[
+  {
+    "candidate_id": "1",
+    "full_name": "John Smith",
+    "emails": [
+      "john.smith@gmail.com"
+    ],
+    "phones": [
+      "+919876543210"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "SDE",
+    "years_experience": null,
+    "skills": [],
+    "experience": [],
+    "education": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "only_source"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "only_source"
+      },
+      {
+        "field": "emails",
+        "source": "csv+resume",
+        "method": "merged"
+      },
+      {
+        "field": "phones",
+        "source": "csv+resume",
+        "method": "merged+normalized"
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "extracted+canonicalized"
+      }
+    ],
+    "overall_confidence": 0.9
+  },
+  {
+    "candidate_id": "2",
+    "full_name": "Asha Rao",
+    "emails": [
+      "asha.rao@yahoo.com"
+    ],
+    "phones": [
+      "+919876543211"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Backend Engineer",
+    "years_experience": null,
+    "skills": [],
+    "experience": [],
+    "education": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "only_source"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "only_source"
+      },
+      {
+        "field": "emails",
+        "source": "csv+resume",
+        "method": "merged"
+      },
+      {
+        "field": "phones",
+        "source": "csv+resume",
+        "method": "merged+normalized"
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "extracted+canonicalized"
+      }
+    ],
+    "overall_confidence": 0.9
+  },
+  {
+    "candidate_id": "3",
+    "full_name": "Ravi Kumar",
+    "emails": [],
+    "phones": [
+      "+919123456789"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [],
+    "education": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "only_source"
+      },
+      {
+        "field": "headline",
+        "source": "none",
+        "method": "missing"
+      },
+      {
+        "field": "emails",
+        "source": "csv+resume",
+        "method": "merged"
+      },
+      {
+        "field": "phones",
+        "source": "csv+resume",
+        "method": "merged+normalized"
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "extracted+canonicalized"
+      }
+    ],
+    "overall_confidence": 0.9
+  },
+  {
+    "candidate_id": "15525cef-e334-4d1e-b3b6-19d5fa5cdcc3",
+    "full_name": "K. V. PRADEEPTHI",
+    "emails": [
+      "deepthi.kamichetty336@gmail.com"
+    ],
+    "phones": [
+      "+919390240204"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Final-year B.Tech IT student (CGPA: 9.51/10) with hands-on experience in Full-Stack Development, AI/ML, and Cloud technologies. Completed two",
+    "years_experience": null,
+    "skills": [
+      {
+        "name": "Languages: Python",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Java",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "C++",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Backend: Node.Js",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Express.js",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "REST APIs",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Jwt Authentication Frontend: React.Js",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "HTML",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "CSS",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Databases: Mysql",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Sql Version Control: Git",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Github Deployment: Render",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Power Bi Testing: Postman",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Bug Reporting",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Oci Ai Services",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Generative Ai Fundamentals",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Machine Learning : Python",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Scikit-learn",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Pandas",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "NumPy",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Classification",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Regression Knn",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Decision Trees",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Random Forest",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Matplotlib",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Core Cs: Data Structures & Algorithms",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "OOP",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "DBMS",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Sdlc.",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Professional Skills: Team Collaboration",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Leadership",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Problem Solving",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Communication",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Agile",
+        "confidence": 0.6,
+        "sources": [
+          "resume"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "summary": "Full Stack Software Development Intern | Technical Hub Link May 2025 – Jun 2025 – Completed a Full Stack Development Internship, gaining hands-on experience in Frontend, backend development, REST API design, database integration, and web application development.",
+        "source": "resume",
+        "confidence": 0.6
+      },
+      {
+        "summary": "Full Stack Software Development Intern | Technical Hub Link May 2026 – Present – Developing and enhancing e-commerce-ready frontend features using React.js JavaScript framework, HTML, and CSS with seamless backend API integration. – Resolved 10+ production bugs; contributing to sprint cycles using version control (Git/GitHub) with strong problem-solving approach.",
+        "source": "resume",
+        "confidence": 0.6
+      }
+    ],
+    "education": [
+      {
+        "raw": "B.Tech – Information Technology, Aditya University 2023 – 2027",
+        "source": "resume",
+        "confidence": 0.6
+      },
+      {
+        "raw": "CGPA: 9.51/10 | Academic Topper – Semesters (1-6) | Intermediate: 98.6% | SSC: 98.5%",
+        "source": "resume",
+        "confidence": 0.6
+      }
+    ],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "resume",
+        "method": "only_source"
+      },
+      {
+        "field": "headline",
+        "source": "resume",
+        "method": "only_source"
+      },
+      {
+        "field": "emails",
+        "source": "csv+resume",
+        "method": "merged"
+      },
+      {
+        "field": "phones",
+        "source": "csv+resume",
+        "method": "merged+normalized"
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "extracted+canonicalized"
+      }
+    ],
+    "overall_confidence": 0.6
+  }
+]
